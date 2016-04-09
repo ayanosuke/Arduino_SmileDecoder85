@@ -214,9 +214,9 @@ void setup()
   //Init CVs
   gCV1_SAddr = Dcc.getCV( CV_MULTIFUNCTION_PRIMARY_ADDRESS ) ;
 
-//for(;;);
-
-//デバック信号：起動
+//デバック信号：起動 　
+//注意：2016/4/9 このコメントを外し起動時にアドレスを点灯させるようにすると、
+//      loopにたどり着く時間が長くなり、CV書き込みが失敗します。
 //LightMes(0);
 //LightMes(Dcc.getCV(CV_MULTIFUNCTION_PRIMARY_ADDRESS));
 
